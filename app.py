@@ -6,6 +6,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.figure_factory as ff
 
+# Set custom title and favicon
+st.set_page_config(
+    page_title="Olympics Analysis",
+    page_icon="🏅",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+
 df = pd.read_csv('athlete_events.csv')
 region_df = pd.read_csv('noc_regions.csv')
 
